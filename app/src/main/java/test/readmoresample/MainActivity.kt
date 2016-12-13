@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun setUpContentTextView() {
         val MAX_LINES = 3
 
-        contentTextView.post {
+        this.contentTextView.post {
             val needTruncate = (contentTextView.lineCount > MAX_LINES)
             if (needTruncate) {
                 this.contentTextView.maxLines = MAX_LINES
